@@ -9,7 +9,11 @@ import os from "node:os";
 export async function workerMain() {
 	await initDb();
 
-	if (!process.env.mode || process.env.mode === "web") {
+	if (
+		!process.env.mode ||
+		process.env.mode === "web" ||
+		(config.clusterLimits?.web && config.clusterLimits.web >= 1)
+	) {
 		// start server
 		await import("../server/index.js").then((x) => x.default());
 	}
