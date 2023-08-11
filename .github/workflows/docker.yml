@@ -3,8 +3,8 @@ name: Publish Docker image
 on:
   push:
     branches:
-      - dev
-      - overhaul
+      - develop
+      - main
     tags:
       - 1.*
   workflow_dispatch:
