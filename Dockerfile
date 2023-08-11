@@ -1,5 +1,7 @@
+ARG NODE_VERSION=20.5.0-bullseye
+
 ## Install dev and compilation dependencies, build files
-FROM node:latest as build
+FROM node:${NODE_VERSION} as build
 WORKDIR /firefish
 
 # Install compilation dependencies
@@ -48,7 +50,7 @@ RUN env NODE_ENV=production sh -c "pnpm run --filter '!native-utils' build && pn
 RUN pnpm i --prod --frozen-lockfile
 
 ## Runtime container
-FROM node:latest
+FROM node:${NODE_VERSION}
 WORKDIR /firefish
 
 # Install runtime dependencies
@@ -74,5 +76,5 @@ COPY --from=build /firefish/packages/backend/native-utils/built /firefish/packag
 RUN corepack enable && corepack prepare pnpm@latest --activate
 ENV NODE_ENV=production
 VOLUME "/firefish/files"
-ENTRYPOINT [ "/sbin/tini", "--" ]
+ENTRYPOINT [ "/usr/bin/tini", "--" ]
 CMD [ "pnpm", "run", "migrateandstart" ]
