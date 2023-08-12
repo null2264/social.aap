@@ -2,7 +2,7 @@ version: "3"
 
 services:
   web:
-    image: registry.joinfirefish.org/firefish/firefish
+    image: ghcr.io/null2264/firefish:nightly
     container_name: firefish_web
     restart: unless-stopped
     depends_on:
