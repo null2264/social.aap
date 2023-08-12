@@ -19,6 +19,9 @@ cypress/videos
 # Coverage
 coverage
 
+# config
+/.config
+
 # misskey
 built
 db
