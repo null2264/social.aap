@@ -1,17 +1,15 @@
+> **Note**
+>
+> This is an unofficial mirror for Firefish, I'm planning to add my personal tweaks later on, but for now it's just an unofficial mirror.
+
+---
+
 <div align="center">
 <a href="https://joinfirefish.org/">
 	<img src="./title.svg" alt="Firefish logo" style="border-radius:50%" width="400"/>
 </a>
 
 **🌎 **[Firefish](https://joinfirefish.org/)** is an open source, decentralized social media platform that's free forever! 🚀**
-
-[![no github badge](https://nogithub.codeberg.page/badge.svg)](https://nogithub.codeberg.page/)
-<!-- [![status badge](https://ci.codeberg.org/api/badges/firefish/firefish/status.svg)](https://ci.codeberg.org/firefish/firefish) -->
-[![opencollective badge](https://opencollective.com/firefish/tiers/badge.svg)](https://opencollective.com/Firefish)
-[![liberapay badge](https://img.shields.io/liberapay/receives/ThatOneCalculator?logo=liberapay)](https://liberapay.com/ThatOneCalculator)
-[![translate-badge](https://hosted.weblate.org/widgets/firefish/-/svg-badge.svg)](https://hosted.weblate.org/engage/firefish/)
-<!-- [![docker badge](https://img.shields.io/docker/pulls/thatonecalculator/firefish?logo=docker)](https://hub.docker.com/r/thatonecalculator/firefish) -->
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](./CODE_OF_CONDUCT.md)
 
 </div>
 
