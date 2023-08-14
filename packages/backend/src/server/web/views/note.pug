@@ -22,8 +22,9 @@ block og
 		meta(property='og:title'       content= title)
 		meta(property='og:description' content= summary)
 		meta(property='og:url'         content= url)
-		meta(property='og:image'       content= imageUrl)
-		if isImage && !note.files[0].isSensitive
+		if !note.files[0].isSensitive
+			meta(property='og:image'     content= imageUrl)
+		if isImage
 			meta(property='og:image:width'     content=note.files[0].properties.width)
 			meta(property='og:image:height'    content=note.files[0].properties.height)
 			meta(property='og:image:type'      content=note.files[0].type)
