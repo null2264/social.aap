@@ -20,6 +20,7 @@ export function apiSearchMastodon(router: Router): void {
 		} catch (e: any) {
 			console.error(e);
 			ctx.status = e.response.status || 401;
+			ctx.headers = e.response.headers || {};
 			ctx.body = e.response.data;
 		}
 	});
@@ -53,6 +54,7 @@ export function apiSearchMastodon(router: Router): void {
 		} catch (e: any) {
 			console.error(e);
 			ctx.status = e.response.status || 401;
+			ctx.headers = e.response.headers || {};
 			ctx.body = e.response.data;
 		}
 	});
@@ -69,6 +71,7 @@ export function apiSearchMastodon(router: Router): void {
 		} catch (e: any) {
 			console.error(e);
 			ctx.status = e.response.status || 401;
+			ctx.headers = e.response.headers || {};
 			ctx.body = e.response.data;
 		}
 	});
@@ -92,6 +95,7 @@ export function apiSearchMastodon(router: Router): void {
 		} catch (e: any) {
 			console.error(e);
 			ctx.status = e.response.status || 401;
+			ctx.headers = e.response.headers || {};
 			ctx.body = e.response.data;
 		}
 	});
