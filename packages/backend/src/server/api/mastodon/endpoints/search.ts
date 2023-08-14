@@ -19,7 +19,7 @@ export function apiSearchMastodon(router: Router): void {
 			ctx.body = data.data;
 		} catch (e: any) {
 			console.error(e);
-			ctx.status = 401;
+			ctx.status = e.response.status || 401;
 			ctx.body = e.response.data;
 		}
 	});
@@ -52,7 +52,7 @@ export function apiSearchMastodon(router: Router): void {
 			};
 		} catch (e: any) {
 			console.error(e);
-			ctx.status = 401;
+			ctx.status = e.response.status || 401;
 			ctx.body = e.response.data;
 		}
 	});
@@ -68,7 +68,7 @@ export function apiSearchMastodon(router: Router): void {
 			ctx.body = data.map((status) => convertStatus(status));
 		} catch (e: any) {
 			console.error(e);
-			ctx.status = 401;
+			ctx.status = e.response.status || 401;
 			ctx.body = e.response.data;
 		}
 	});
@@ -91,7 +91,7 @@ export function apiSearchMastodon(router: Router): void {
 			ctx.body = data;
 		} catch (e: any) {
 			console.error(e);
-			ctx.status = 401;
+			ctx.status = e.response.status || 401;
 			ctx.body = e.response.data;
 		}
 	});
