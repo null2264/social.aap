@@ -1,6 +1,12 @@
+# `social.aap`
+
 > **Note**
 >
-> This is an unofficial mirror for Firefish, I'm planning to add my personal tweaks later on, but for now it's just an unofficial mirror.
+> This is a fork of firefish, it intended for private instances. I will not provide any kind of support on deployments or bugs.
+
+## Changes
+
+TODO
 
 ---
 
