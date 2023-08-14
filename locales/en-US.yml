@@ -2124,4 +2124,6 @@ _feeds:
   rss: "RSS"
   atom: "Atom"
   jsonFeed: "JSON feed"
-guest: "Fediverse allows you to react (or like), reply, or boost from a different server"
+guest: "Fediverse allows you to react (or like), reply, or boost posts from a different Fediverse (Mastodon, Misskey, Firefish, etc) server."
+thisServer: "On this server"
+otherServer: "On a different server"
