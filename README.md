@@ -6,7 +6,15 @@
 
 ## Changes
 
-TODO
+- Apply web-queue worker split patch ([FFGL#10552](https://git.joinfirefish.org/firefish/firefish/-/merge_requests/10552))
+- Retrieve only local patrons list
+- UI adjustments
+  - Set avatar background
+- Fixed Dockerfile
+- Fixed thumbnails not loaded properly ([FFGL#10669](https://git.joinfirefish.org/firefish/firefish/-/issues/10669))
+  It's not a "proper" fix, all I did is remove Content-Length since it keep giving the wrong size, it always gives the original image's filesize
+- (Partially) Fixed FediFetch support ([FFGL#10628](https://git.joinfirefish.org/firefish/firefish/-/issues/10628))
+  The issue happens due firefish's mastodon compat API not working always return status code 401 for ratelimit instead of the standard 429
 
 ---
 
