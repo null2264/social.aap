@@ -40,7 +40,7 @@
 	"dependencies": {
 		"@bull-board/api": "5.7.2",
 		"@bull-board/ui": "5.7.2",
-		"@napi-rs/cli": "^2.16.2",
+		"@napi-rs/cli": "^2.16.3",
 		"@tensorflow/tfjs": "^3.21.0",
 		"js-yaml": "4.1.0",
 		"seedrandom": "^3.0.5"
